@@ -9,8 +9,7 @@ public class Word {
 	}
 
 	@Override
-	public String toString() { // TODO: INTEGRAR C/ WEB DRIVER
-
+	public String toString() { 
 		// TODO Auto-generated method stub
 		return nome;
 

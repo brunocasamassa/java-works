@@ -8,10 +8,11 @@ public class Relacao {
 		this.status = status;
 	}
 
-	
+	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return status;
+		
 		
 	}
 }

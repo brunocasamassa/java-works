@@ -33,17 +33,16 @@ public class Main {
 
 		// Read txt
 		try {
-			scan = new Scanner(new File("C:\\Users\\Auryon.AURYON-PC\\Desktop\\flatWiki.txt"));
+			scan = new Scanner(new File("C:\\Users\\Auryon.AURYON-PC\\Documents\\GitHub\\java-works\\Graphs_JUNG\\teste.txt"));
 
-			// scan = new Scanner(new
-			// File("C:\\Users\\Auryon.AURYON-PC\\Desktop\\flatWiki.txt"));
+			// scan = new Scanner(new File("C:\\Users\\Auryon.AURYON-PC\\Desktop\\flatWiki.txt"));
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 
 		Graph<Word, Relacao> g = new SparseMultigraph<Word, Relacao>();
-
+		
 		Relacao word_type = new Relacao("connect");
 		String s = scan.next();
 		Word word = new Word(s);
@@ -51,8 +50,9 @@ public class Main {
 		g.addVertex(word);
 
 		while (scan.hasNextLine()) {
-			
+			System.out.println(scan);
 			s = scan.next();
+			System.out.println(s);
 			word = new Word(s);
 			g.addVertex(word);
 			try {
