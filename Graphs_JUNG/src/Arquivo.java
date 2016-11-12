@@ -8,11 +8,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/**
- * HASH MAP
- *
- * @author caio.haguena
- */
+
 public class Arquivo {
 
 	public static void main(String[] args) {
