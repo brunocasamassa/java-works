@@ -50,9 +50,8 @@ public class Main {
 		g.addVertex(word);
 
 		while (scan.hasNextLine()) {
-			System.out.println(scan);
+			
 			s = scan.next();
-			System.out.println(s);
 			word = new Word(s);
 			g.addVertex(word);
 			try {
