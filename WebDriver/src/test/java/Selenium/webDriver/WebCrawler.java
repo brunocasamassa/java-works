@@ -1,29 +1,28 @@
 /**
- * WEB_CRAWLER_GOOGLE_SEARCH 
+ * WEB_CRAWLER_G._SEARCH 
  *
  * @author Aury0n
  */
+
 package Selenium.webDriver;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebCrawler {
 
 	public static void main(String[] args) throws InterruptedException {
 		int i = 0;
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		while (i < 100) {
+		//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver driver = new HtmlUnitDriver();
+		while (i < 1) {
 			driver.get("https://www.google.com.br/");
-			driver.findElement(By.xpath("//*[@id=\"lst-ib\"]")).sendKeys("caçambas zona sul são paulo");
-			driver.findElement(By.xpath("//*[@id=\"sblsbb\"]/button/span")).click();
-			driver.findElement(By.className("ads-ad")).click();
-	
-			String texto = driver.findElement(
-					By.xpath("//*[@id=\"content\"]/div[1]/p[3]/b[1]"))
-					.getText();
-			System.out.println(texto);
+			driver.findElement(By.name("q")).sendKeys("caçambas zona sul são paulo");
+			driver.findElement(By.id("vs0p1c0")).click();
+			driver.getPageSource();
+			System.out.println(driver);
 			i++;
 		}
 		// driver.get("https://www.priberam.pt/dlpo/");

@@ -1,1 +1,11 @@
-eu anfibios a comandos bola é comandos com comandos nao brinca se
+If you choose to use the Commons Collections library instead of the standard Java Collections API, you can achieve this with ease.
+
+The BidiMap interface in the Collections library is a bi-directional map, allowing you to map a key to a value (like normal maps), and also to map a value to a key, thus allowing you to perform lookups in both directions. Obtaining a key for a value is supported by the getKey() method.
+
+There is a caveat though, bidi maps cannot have multiple values mapped to keys, and hence unless your data set has 1:1 mappings between keys and values, you cannot use bidimaps.
+
+Update
+
+If you want to rely on the Java Collections API, you will have to ensure the 1:1 relationship between keys and values at the time of inserting the value into the map. This is easier said than done.
+
+Once you can ensure that, use the entrySet() method to obtain the set of entries (mappings) in the Map. Once you have obtained the set whose type is Map.Entry, iterate through the entries, comparing the stored value against the expected, and obtain the corresponding key.eu anfibios a comandos bola é comandos com comandos nao brincar se
