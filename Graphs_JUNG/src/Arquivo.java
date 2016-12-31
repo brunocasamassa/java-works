@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
+s
 public class Arquivo {
 
 	public static void main(String[] args) {

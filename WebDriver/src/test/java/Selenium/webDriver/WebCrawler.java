@@ -10,13 +10,14 @@ package Selenium.webDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebCrawler {
 
 	public static void main(String[] args) throws InterruptedException {
 		int i = 0;
-		//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		WebDriver driver = new HtmlUnitDriver();
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver driver = new ChromeDriver(); //change to htmlUnit driver
 		while (i < 1) {
 			driver.get("https://www.google.com.br/");
 			driver.findElement(By.name("q")).sendKeys("caçambas zona sul são paulo");
