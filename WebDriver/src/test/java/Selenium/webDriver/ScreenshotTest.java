@@ -58,11 +58,11 @@ public class ScreenshotTest {
 			String formatedData = sdf.format(hora);
 			// System.out.println(formatedData);
 
-			if (hourList.contains(formatedData)) {
+			//if (hourList.contains(formatedData)) {
 			System.out.println("got it");
 			start();
 
-			 }
+			 //}
 
 		}
 
