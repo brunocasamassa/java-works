@@ -1,0 +1,35 @@
+package teste;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class exercicio1 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		 
+		
+		System.out.println("digite o valor de x");
+		 Random randomizer = new Random ();
+		 
+		int d = randomizer.nextInt(6);
+		 
+		 System.out.println(d);
+		 
+		//int x = scan.nextInt();
+		 System.out.println("digite o valor de y");
+	    //int y = scan.nextInt();
+	     
+	    //int R = (x+y);
+	     
+	 //   System.out.println("o resultado é igual a " +R);
+	    
+	     
+		
+		
+		
+		
+	}
+
+}

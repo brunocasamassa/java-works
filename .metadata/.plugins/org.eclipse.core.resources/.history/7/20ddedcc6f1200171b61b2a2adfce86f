@@ -1,0 +1,54 @@
+package teste;
+
+import java.util.Scanner;
+
+public class JogoDaVelha {
+	
+	
+	private static Scanner scan;
+
+	public static void main(String[] args) {
+
+		String a1 = "";
+		String a2 = "";
+		String a3 = "";
+		String b1 = "";
+		String b2 = "";
+		String b3 = "";
+		String c1 = "";
+		String c2 = "";
+		String c3 = "";
+		
+		
+		System.out.println("de quem é a vez (X ou O) ? ");
+		scan = new Scanner(System.in);
+		String player = scan.nextLine();
+		
+		
+		System.out.println("Selecione a casa a ser inserida sua peça: (a1 à c3) ");
+		
+		String casaEscolhida= scan.nextLine();
+		if(casaEscolhida == "a1") a1 = player;
+		if(casaEscolhida == "a2") a2 = player;
+		if(casaEscolhida == "a3") a3 = player;
+		if(casaEscolhida == "b1") b1 = player;
+		if(casaEscolhida == "b2") b2 = player;
+		if(casaEscolhida == "b3") b3 = player;
+		if(casaEscolhida == "c1") c1 = player;
+		if(casaEscolhida == "c2") c2 = player;
+		if(casaEscolhida == "c3") c3 = player;
+		
+		
+		System.out.println(a1+"|"+a2+"|"+a3);
+		System.out.println("-----------");
+		System.out.println(b1+"|"+b2+"|"+b3);
+		System.out.println("-----------");
+		System.out.println(c1+"|"+c2+"|"+c3);
+		
+		
+		
+		
+		
+	}
+
+}
